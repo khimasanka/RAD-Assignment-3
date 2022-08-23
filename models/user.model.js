@@ -10,7 +10,7 @@ const userScheama = new mongoose.Schema(
             type: String,
             required: true
         },
-        surename:{
+        surname:{
             type: String,
             required: true
         },
