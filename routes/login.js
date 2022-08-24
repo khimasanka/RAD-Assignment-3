@@ -6,8 +6,7 @@ const User=require('../models/user.models')
 
 app.use(express.json);
 
-
-router.post('/', async (req, res) => {
+/*router.post('/', async (req, res) => {
     const surname = req.body.surname;
     const password = req.body.password;
 
@@ -20,7 +19,7 @@ router.post('/', async (req, res) => {
             res.send("Incorrect Password")
         }
     }
-});
+});*/
 
 
 module.exports = router
