@@ -7,120 +7,280 @@
 	},
 	"item": [
 		{
-			"name": "get All users",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4001/user",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4001",
-					"path": [
-						"user"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "user register",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"userId\": \"U-1\",\r\n    \"firstName\":\"Kaveesha\",\r\n    \"surname\": \"Himasanka\" ,\r\n    \"gender\": \"Male\",\r\n    \"dateOfBirth\": \"2000-06-06\",\r\n    \"password\":\"Kaveesha\" ,\r\n    \"phoneNumber\": \"0761064277\",\r\n    \"email\": \"kaveeekaveee10@gmail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "user",
+			"item": [
+				{
+					"name": "get All users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:4001/user",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4001",
-					"path": [
-						"user"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "search user",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4001/user/63061ed636d99c10b71a06f2",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4001",
-					"path": [
-						"user",
-						"63061ed636d99c10b71a06f2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "delete user",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4001/user/63061eb036d99c10b71a06f0",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4001",
-					"path": [
-						"user",
-						"63061eb036d99c10b71a06f0"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "user update",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"userId\": \"U-2\",\r\n    \"firstName\":\"Wasantha\",\r\n    \"surname\": \"Yapa\" ,\r\n    \"gender\": \"Male\",\r\n    \"dateOfBirth\": \"2003-01-06\",\r\n    \"password\":\"wasantha\" ,\r\n    \"phoneNumber\": \"0761064277\",\r\n    \"email\": \"wasantha@gmail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "user register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"U-1\",\r\n    \"firstName\":\"Kaveesha\",\r\n    \"surname\": \"Himasanka\" ,\r\n    \"gender\": \"Male\",\r\n    \"dateOfBirth\": \"2000-06-06\",\r\n    \"password\":\"Kaveesha\" ,\r\n    \"phoneNumber\": \"0761064277\",\r\n    \"email\": \"kaveeekaveee10@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:4001/user/63061eb036d99c10b71a06f0",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4001",
-					"path": [
-						"user",
-						"63061eb036d99c10b71a06f0"
-					]
+				{
+					"name": "search user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/user/63061ed636d99c10b71a06f2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user",
+								"63061ed636d99c10b71a06f2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/user/63061eb036d99c10b71a06f0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user",
+								"63061eb036d99c10b71a06f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"U-2\",\r\n    \"firstName\":\"Wasantha\",\r\n    \"surname\": \"Yapa\" ,\r\n    \"gender\": \"Male\",\r\n    \"dateOfBirth\": \"2003-01-06\",\r\n    \"password\":\"wasantha\" ,\r\n    \"phoneNumber\": \"0761064277\",\r\n    \"email\": \"wasantha@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/user/63061eb036d99c10b71a06f0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"user",
+								"63061eb036d99c10b71a06f0"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "get all posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/posts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"u-1\",\r\n    \"date\":\"2022-08-12\",\r\n    \"time\":\"12:52 AM\",\r\n    \"title\":\"feeling awesome\",\r\n    \"body\":\"img/src\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/posts/63063e868774cf400ae38dd4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"posts",
+								"63063e868774cf400ae38dd4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4001/posts/63063f91508aaf2b44c81d9d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"posts",
+								"63063f91508aaf2b44c81d9d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"userId\": \"u-2\",\r\n        \"date\": \"2022-08-12\",\r\n        \"time\": \"12:52 AM\",\r\n        \"title\": \"feeling awesome\",\r\n        \"body\": \"img/src\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/posts/630640bc7979deb6c44a898e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"posts",
+								"630640bc7979deb6c44a898e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"kaveeekaveee10@gmail.com\",\r\n    \"password\":\"Kaveesha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
