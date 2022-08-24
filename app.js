@@ -4,7 +4,7 @@ const express=require('express');
 const app=express();
 const port=4000;
 
-const url='mongodb://localhost/express';
+const url='mongodb://127.0.0.1/express';
 
 mongoose.connect(url,{useNewUrlParser : true});
 const con=mongoose.connection;
