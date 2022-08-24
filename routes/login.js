@@ -1,25 +1,30 @@
 const express = require('express');
 const app = express();
-const router=express.Router();
+const router = express.Router();
 
-const User=require('../models/user.models')
+const User = require('../models/user.models')
 
 app.use(express.json);
 
-/*router.post('/', async (req, res) => {
-    const surname = req.body.surname;
-    const password = req.body.password;
+router.post('/', async (req, res) => {
+    try {
+        const email = req.body.email;
+        const password = req.body.password;
 
-    const user = await User.find();
+        const user = await User.find();
 
-    for (const i of user) {
-        if (surname == i.surname && password === i.password) {
-            res.json(i)
-        } else {
-            res.send("Incorrect Password")
+        for (const i of user) {
+            if (email === i.email && password === i.password) {
+                res.json(i)
+            } else {
+                res.send("Incorrect Password")
+            }
         }
+
+    } catch (err) {
+        res.send(err.message);
     }
-});*/
+});
 
 
 module.exports = router
