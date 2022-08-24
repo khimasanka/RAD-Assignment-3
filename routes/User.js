@@ -56,14 +56,14 @@ router.delete('/:id', async function (req, res) {
 router.put('/:id', async (req, res) => {
     try {
         const user = await User.findById(req.params.id);
-        user.userId = req.body.userId
-        user.firstName = req.body.firstName
-        user.surname = req.body.surname
-        user.gender = req.body.gender
-        user.dateOfBirth = req.body.dateOfBirth
-        user.password = req.body.password
-        user.phoneNumber = req.body.phoneNumber
-        user.email = req.body.email
+        user.userId = req.body.userId;
+        user.firstName = req.body.firstName;
+        user.surname = req.body.surname;
+        user.gender = req.body.gender;
+        user.dateOfBirth = req.body.dateOfBirth;
+        user.password = req.body.password;
+        user.phoneNumber = req.body.phoneNumber;
+        user.email = req.body.email;
 
         const response = await user.save();
         res.json(response);
