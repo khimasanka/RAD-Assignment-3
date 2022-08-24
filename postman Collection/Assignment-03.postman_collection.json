@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "97a45665-837f-49db-bf93-4d3bd35c38e9",
+		"name": "Assignment-03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18154570"
+	},
+	"item": [
+		{
+			"name": "get All users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"U-1\",\r\n    \"firstName\":\"Kaveesha\",\r\n    \"surname\": \"Himasanka\" ,\r\n    \"gender\": \"Male\",\r\n    \"dateOfBirth\": \"2000-06-06\",\r\n    \"password\":\"Kaveesha\" ,\r\n    \"phoneNumber\": \"0761064277\",\r\n    \"email\": \"kaveeekaveee10@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/user/63061ed636d99c10b71a06f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"user",
+						"63061ed636d99c10b71a06f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4001/user/63061eb036d99c10b71a06f0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"user",
+						"63061eb036d99c10b71a06f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"U-2\",\r\n    \"firstName\":\"Wasantha\",\r\n    \"surname\": \"Yapa\" ,\r\n    \"gender\": \"Male\",\r\n    \"dateOfBirth\": \"2003-01-06\",\r\n    \"password\":\"wasantha\" ,\r\n    \"phoneNumber\": \"0761064277\",\r\n    \"email\": \"wasantha@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/user/63061eb036d99c10b71a06f0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"user",
+						"63061eb036d99c10b71a06f0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
